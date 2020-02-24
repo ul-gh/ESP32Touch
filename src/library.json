@@ -1,0 +1,20 @@
+{
+  "name": "ESP32Touch",
+  "version": "0.1.0",
+  "keywords": "ESP32 touch button driver using async callback interface",
+  "description": "Features robust input filtering and auto-calibration",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ul-gh/ESP32Touch.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "authors":
+  [
+    {
+      "name": "Ulrich Lukas",
+      "email": "user@domain.invalid"
+    }
+  ]
+}
