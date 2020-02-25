@@ -9,9 +9,6 @@
 
 #include "esp32_touch.hpp"
 
-static constexpr int dispatch_cycle_time_ms = 100;
-static constexpr int threshold_inactive = 0;
-static constexpr int filter_period = 10;
 
 //////// ESP32Touch public:
 
@@ -19,7 +16,7 @@ ESP32Touch::ESP32Touch()
     : event_timer{}
 {   
     // Initialize touch pad peripheral, it will start a timer to run a filter
-    info_print("Initializing touch pad");
+    debug_print("Initializing touch pad");
     touch_pad_init();
     // If use interrupt trigger mode, should set touch sensor FSM mode at 'TOUCH_FSM_MODE_TIMER'.
     touch_pad_set_fsm_mode(TOUCH_FSM_MODE_TIMER);
@@ -42,8 +39,8 @@ ESP32Touch::~ESP32Touch() {
 }
 
 void ESP32Touch::configure_input(const int input_number,
-                                    const uint8_t threshold_percent,
-                                    CallbackT callback) {
+                                 const uint8_t threshold_percent,
+                                 CallbackT callback) {
     debug_print_sv("Registering callback for touch button no.: ", input_number);
     //debug_print_hex("Callback address: ", (uint32_t)debug_get_address(&callback));
     s_pad_enabled[input_number] = true;
@@ -93,6 +90,7 @@ void ESP32Touch::diagnostics() {
     }
 
 } // void diagnostics()
+
 
 //////// ESP32Touch private:
 
