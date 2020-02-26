@@ -29,8 +29,6 @@
  */
 
 #include <Arduino.h>
-// Omit this line to disable debug print output
-#define ENABLE_DEBUG_PRINT 1
 #include <esp32_touch.hpp>
 
 // LED pin

@@ -7,6 +7,8 @@
 #include <driver/touch_pad.h>
 #include <Ticker.h>
 
+// Omit this line to disable debug print output
+#define ENABLE_DEBUG_PRINT 1
 #include "info_debug_error.h"
 
 /** @brief User callback function type */
