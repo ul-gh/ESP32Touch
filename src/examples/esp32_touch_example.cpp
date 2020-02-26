@@ -69,8 +69,9 @@ void setup() {
   buttons.configure_input(touch_io_off, touch_threshold, disable_led);
   // You can also directly register a lambda:
   buttons.configure_input(touch_io_toggle, touch_threshold, []() {
+      Serial.println("Toggling the LED!");
       bool current_led_state = (bool)digitalRead(led_pin);
-      digitalWrite(led_pin, ~current_led_state);
+      digitalWrite(led_pin, !current_led_state);
   });
   // Call this once and you are done..
   buttons.begin();
