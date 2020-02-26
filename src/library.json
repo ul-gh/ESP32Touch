@@ -1,8 +1,8 @@
 {
   "name": "ESP32Touch",
   "version": "0.1.0",
-  "keywords": "ESP32 touch button driver using async callback interface",
-  "description": "Features robust input filtering and auto-calibration",
+  "keywords": "ESP32 touch button driver async callback",
+  "description": "ESP32 touch button driver using async callback interface",
   "repository":
   {
     "type": "git",
