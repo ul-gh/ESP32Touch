@@ -44,7 +44,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -54,12 +53,6 @@ $(function() {
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="esp32__touch_8hpp_source.html">esp32_touch.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a92392e0912d70ce14e4337c4027e3314"><td class="memItemLeft" align="right" valign="top"><a id="a92392e0912d70ce14e4337c4027e3314"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ENABLE_DEBUG_PRINT</b>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a92392e0912d70ce14e4337c4027e3314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a835129eb5754dadbcde53b2421379a77"><td class="memItemLeft" align="right" valign="top"><a id="a835129eb5754dadbcde53b2421379a77"></a>
@@ -102,7 +95,7 @@ constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>se
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>********************** <a class="el" href="class_e_s_p32_touch.html" title="ESP32 touch button driver with async callback interface. ">ESP32Touch</a> basic example ****************************</p>
 <p>This registers three touch button inputs switching on/off and toggling an LED connected to GPIO 2 (on-board blue LED on many popular boards).</p>
-<p>All of the operation takes place asynchronously via user-defined callback functions, which can be any type compatible with a C++ std::function object, i.e. plain global functions, static an non-static class or instance members or C++11 lambda expressions. The callbacks must have a signature of void(void).</p>
+<p>All of the operation takes place asynchronously via user-defined callback functions, which can be any type compatible with a C++ std::function object, i.e. plain global functions, static and non-static class or instance members or C++11 lambda expressions. The callbacks must have a signature of void(void).</p>
 <p>For the sensor input pins, please again note that the touch API uses a different numbering scheme than the standard GPIO numbers. E.g. touch button no. 0 is GPIO 4.</p>
 <p>I can also recommend the ESP32 pinout reference and reserved pins info from: <a href="https://randomnerdtutorials.com/esp32-pinout-reference-gpios/">https://randomnerdtutorials.com/esp32-pinout-reference-gpios/</a></p>
 <p>GPIOs used in this example: </p>

@@ -1,5 +1,5 @@
 # ESP32Touch
-ESP32 touch button driver for the Arduino framwork using async callback interface
+ESP32 touch button driver for the Arduino framework using async callback interface
 
 ## Example usage
 File: [src/examples/esp32_touch_example.cpp](https://github.com/ul-gh/ESP32Touch/blob/master/src/examples/esp32_touch_example.cpp)

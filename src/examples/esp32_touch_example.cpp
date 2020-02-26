@@ -6,7 +6,7 @@
  * 
  * All of the operation takes place asynchronously via user-defined
  * callback functions, which can be any type compatible with a C++
- * std::function object, i.e. plain global functions, static an non-static
+ * std::function object, i.e. plain global functions, static and non-static
  * class or instance members or C++11 lambda expressions.
  * The callbacks must have a signature of void(void).
  * 
